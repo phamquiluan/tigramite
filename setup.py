@@ -41,7 +41,7 @@ EXTRAS_REQUIRE = {
         "matplotlib>=3.7.0",  # plotting
         "seaborn>=0.12.2",    # plotting
         "networkx>=3.0",      # plotting
-        "pytorch>=1.13.1",    # GPDC torch version
+        "torch>=1.13.1",    # GPDC torch version
         "gpytorch>=1.9.1",    # GPDC gpytorch version
         "dcor>=0.6",          # GPDC distance correlation version
         "joblib>=1.2.0",      # CMIsymb shuffle parallelization
@@ -50,7 +50,7 @@ EXTRAS_REQUIRE = {
 
 # Define the packages needed for testing
 TESTS_REQUIRE = ["nose", "pytest", "networkx>=3.0", "scikit-learn>=1.2",
-                 "pytorch>=1.13.1", "gpytorch>=1.9.1", "dcor>=0.6"]
+                 "torch>=1.13.1", "gpytorch>=1.9.1", "dcor>=0.6"]
 EXTRAS_REQUIRE["test"] = TESTS_REQUIRE
 # Define the extras needed for development
 EXTRAS_REQUIRE["dev"] = EXTRAS_REQUIRE["all"]
